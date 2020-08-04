@@ -1,0 +1,9 @@
+.app {
+  text-align: center;
+  background-color: gray;
+  height: 100vh;
+}
+
+.app__container {
+  padding-top: 8rem;
+}
