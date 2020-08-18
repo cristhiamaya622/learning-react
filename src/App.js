@@ -1,8 +1,10 @@
 import React from 'react';
 import NavBar from './components/NavBar/NavBar';
 import SearchBox from './components/SearchBox/SearchBox';
-import './App.css';
+import GenericTable from './components/GenericTable/GenericTable';
+import { TableProvider } from "./contexts/tableContext";
 import { Row, Col, Container } from 'react-bootstrap';
+import './App.css';
 
 function App() {
   return (
@@ -11,7 +13,10 @@ function App() {
       <Container className="app__container">
         <Row>
           <Col>
-            <SearchBox></SearchBox>
+            <TableProvider>
+              <SearchBox></SearchBox>
+              <GenericTable></GenericTable>
+            </TableProvider>
           </Col>
         </Row>
       </Container>
