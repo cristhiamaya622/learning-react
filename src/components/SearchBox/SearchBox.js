@@ -22,7 +22,6 @@ function SearchBox() {
           {({ handleCriteria }) => (
             <Jumbotron className="searchbox">
               <Form onSubmit={(event) => handleSubmit(event, handleCriteria)}>
-              {/* <Form onSubmit={handleSubmit}> */}
                 <h1 className="searchbox__title">Consentimientos</h1>
                 <Container className="searchbox__container">
                   <Row>

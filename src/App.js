@@ -14,8 +14,8 @@ function App() {
         <Row>
           <Col>
             <TableProvider>
-              <SearchBox></SearchBox>
-              <GenericTable></GenericTable>
+              <SearchBox/>
+              <GenericTable/>
             </TableProvider>
           </Col>
         </Row>
